@@ -1,0 +1,27 @@
+#############################
+BATCH_SIZE = 4
+n_epochs = 10
+IMG_WIDTH = 1024
+#Train = False
+Train = False
+device = torch.device("cuda:0")
+save_dir = 'restnet_10_no_depth'
+test_epoch = 10
+if_final = True
+train_dev = 0.2
+load_pretrain = False
+#load_pretrain = True
+load_epoch = 10
+gamma_set = 0.1
+
+save_epoch = 2
+depth_loss_control = False
+mask_loss_control = False
+
+mask_weight = 0.1
+reg_weight = 0.7
+rot_weight = 0.3
+
+num_class = 15
+#############################
+socre = 0.036
